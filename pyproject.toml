@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "mlflow-demo"
+version = "0.1.0"
+description = ""
+authors = ["Tom Chang <ckf30098@yahoo.com.tw>"]
+readme = "README.md"
+packages = [{ include = "mlflow_demo", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+xgboost = ">=3.0.2,<4.0.0"
+torch = ">=2.7.1,<3.0.0"
+mlflow = ">=3.1.0,<4.0.0"
+scikit-learn = ">=1.7.0,<2.0.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
